@@ -64,6 +64,7 @@ a {
   font-weight: 500;
   letter-spacing: 2px;
   color: #7a9eb1;
+  cursor: pointer;
 }
 
 .navbar .nav-list li a:hover {
@@ -283,7 +284,7 @@ a {
   border-radius: 10px;
   padding: 20px;
   width: 20vw;
-  height: 50vh;
+  height: 60vh;
   background-color: #415865;
   transition: all 0.5s;
   color: white;
@@ -317,7 +318,7 @@ a {
   }
   .service .card {
     width: 90vw !important;
-    height: 55vh !important;
+    height: 65vh !important;
   }
 }
 
@@ -376,72 +377,13 @@ a {
 
 .email {
   position: relative;
+  cursor: pointer;
 }
 
-.email form {
-  justify-content: center;
-  flex-direction: column;
-  height: fit-content;
-  align-items: center;
-  display: flex;
-  gap: 10px;
-  width: 70%;
-  margin: auto;
-}
-
-.email .balas {
-  width: 100%;
-  height: 120px;
-  background-color: #7a9eb1;
-  color: #0f1021;
-  padding: 15px;
-  resize: none;
-  transition: all 0.5s;
-  outline: 2px solid black;
-  border: none;
-  overflow: auto;
-}
-
-.email .balas:focus, .email .balas:hover {
-  outline: 2px solid #7a9eb1;
-  border: none;
-}
-
-.email .balas::placeholder {
-  color: #0f1021;
-}
-
-.email button {
-  padding: 8px 20px;
-  border: 0px solid transparent;
-  width: 100%;
-  color: #415865;
-  border: 3px solid #415865;
-  background-color: white;
-  font-weight: bold;
-  letter-spacing: 2px;
-  transition: all 0.4s;
-}
-
-.email button:hover, .email button:focus {
-  background-color: #415865;
+.email li .bi {
+  font-size: 25px;
   color: white;
-  border: 3px solid white;
-}
-
-@media screen and (max-width: 768px) {
-  .email form {
-    min-width: 60%;
-  }
-  .email .balas {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .email form {
-    width: 100% !important;
-  }
+  padding-right: 5px;
 }
 
 footer {
@@ -493,5 +435,10 @@ footer .navigation li a:hover {
     flex-direction: column;
     gap: 15px;
   }
+}
+
+.active-button {
+  border: 2px solid white !important;
+  color: white !important;
 }
 /*# sourceMappingURL=style.css.map */

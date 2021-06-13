@@ -39,3 +39,7 @@ words.forEach((word) => {
   gtl.to(".o-text", { duration: 1.5, text: word });
   masterTl.add(gtl);
 });
+$(".nav-list .link-a").click(function () {
+  $(".nav-list .link-a").removeClass("active-button");
+  $(this).addClass("active-button");
+});
